@@ -1,0 +1,376 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image:url(bg%20111.jpg);
+	font-size:18px;
+	font-family:serif;
+	color:#FFF;
+	}
+	
+h1{
+	text-align:center;
+	}
+	
+h2{
+	text-align:center;
+	margin:10px;
+	}
+/*This title is for answer to request file*/
+h3{
+	text-align:center;
+	}
+	
+p{
+	text-align:right;
+	}
+	
+/*by using position:absolute we put two div on each other in a same position and this is the way we can put two element on top of each other by seting its parent position to relative and its chiled to absolute.*/
+#page1{
+	margin-left:30%;
+	display:inline-table;
+	}
+	
+#page2{
+	display:inline-table;
+	position:absolute;
+	opacity:0;
+	display:none;
+	}
+	
+#page3{
+	margin-top:-19%;
+	position:absolute;
+	margin-left:60%;
+	opacity:0;
+	display:none;
+	}
+	
+#communication{
+	height:450px;
+	width:300px;
+	border:solid 1px #f6f6f6;
+	border-radius:10px;
+	display:inline-table;
+	float:right;
+	font-size:15px;
+	color:#ffffff;
+}
+	
+#contactInfo{
+	height:450px;
+	width:300px;
+	size:portrait;
+	border:solid 1px #FFF;
+	border-radius:10px;
+	display:inline-table;
+	background-color:rgba(12,79,131,0.6);
+	float:left;
+	font-size:15px;
+	}
+
+table{
+	margin:10px;
+	table-layout:fixed;
+	border-collapse:collapse;
+	width:280px;
+}
+
+table td{
+	width:120px;
+	height:20px;
+	word-wrap:break-word;
+}
+
+/*the contacts id is set for selectable method of jquery ui and without css configuration selectable method wouldn't work.*/
+#contacts .ui-selecting{
+	background: #ccc;
+}
+#contacts .ui-selected{
+	background:#90CAF9;
+	color:#000;
+}
+#contacts{
+	list-style-type:none;
+	padding:10px;
+	height:300px;
+	overflow-x:auto;
+	}
+#contacts li{
+	margin: 5px;
+	padding: 5px;
+	height: 15px;
+	border: 1px solid black;
+}
+
+#recentContacts .ui-selecting{
+	background: #ccc;
+}
+#recentContacts .ui-selected{
+	background:#90CAF9;
+	color:#000;
+}
+#recentContacts{
+	list-style-type:none;
+	padding:10px;
+	height:300px;
+	overflow-x:auto;
+	}
+#recentContacts li{
+	margin: 5px;
+	padding: 5px;
+	height: 15px;
+	border: 1px solid black;
+}
+
+#newContact .ui-selecting{
+	background: #ccc;
+}
+#newContact .ui-selected{
+	background:#90CAF9;
+	color:#000;
+}
+#newContact{
+	list-style-type:none;
+	}
+#newContact li{
+	margin: 5px;
+	padding: 5px;
+	height: 15px;
+	border: 1px solid black;
+}
+	
+#chatArea{
+	height:450px;
+	width:500px;
+	margin-left:8%;
+	color:black;
+	display:inline-table;
+	}
+	
+#showMessage{
+	height:400px;
+	width:500px;
+	background-image:url(backgrounds-26479-27171-hd-wallpapers.jpg);
+	color:black;
+	overflow:scroll;
+	
+	}
+	
+#typeMessage{
+	height:48px;
+	width:440px;
+	border-radius:10px;
+	background-color:#FFF;
+	border-bottom: solid 1px #003333;
+	resize:none;
+	}
+#sendMessage{
+	float:right;
+	height:53px;
+	width:54px;
+	border-radius:10px;
+	}
+	
+#typeMessage:focus{
+	outline:none;
+	}	
+	
+#home {
+	padding:20px 0px 0px 0px;
+	}
+	
+#addNewContact{
+	padding:10px 0px 0px 0px;
+	}
+#sendRequest{
+	margin-left:98px;
+	margin-bottom:5px;
+	
+	}
+#newContact{
+	margin-left:10px;
+	margin-top:10px;
+	}
+	
+/*buttons designe for btn,next2,next3,preview1,preview2; (numbers in the name of buttons indicate the page they direct us. for example next2 will take us to the second part of registration form or page 2.*/	
+#signUp{
+	text-align:center;
+	height:40px;
+	width:80px; 
+	margin-left:15px;
+	}
+	
+#next2{
+	text-align:center;
+	margin-left:60%;
+	height:40px; 
+	width:80px;
+	}
+	
+#next3{
+	text-align:center;
+	margin-left:15px;
+	height:40px; 
+	width:80px;
+	}
+	
+#Previous1{
+	text-align:center;
+	height:40px; 
+	width:80px;
+	margin-left:44%;
+	}
+	
+#Previous2{
+	text-align:center;
+	height:40px; 
+	width:80px;
+	margin-left:37%;
+	}	
+	
+#logIn{	
+	text-align:center;
+	height:40px;
+	width:80px; 
+	margin-left:79%;
+	}
+	
+input{
+	border-radius:5px;
+	}
+
+.selectBackground{
+	margin-left: 3%;
+	margin-top: 16%;
+	}
+	
+.selectBackground input{opacity:0;}
+
+/*this part is for make links animate when we hover on them. this code change the color of text in one second
+when we move on it and turn back to its normal mood in one second when we move out of text. */
+a {
+	text-decoration:none;
+	color:#FFF;
+	-webkit-transition-property: color;
+	-moz-transition-property: color;
+	-o-transition-property: color;
+	transition-property: color;
+		
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+	
+a:hover{
+	text-decoration:none;
+	color:#0F0;
+	-webkit-transition-property: color;
+	-moz-transition-property: color;
+	-o-transition-property: color;
+	transition-property: color;
+	
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+/*this part is same as link part and it is apply on labals of selectBackground class to change their size and color*/
+.selectBackground label{
+	cursor:pointer;
+	color:#FFF;
+	-webkit-transition-property: color, font-size;
+	-moz-transition-property: color, font-size;
+	-o-transition-property: color, font-size;
+	transition-property: color, font-size;
+	
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+	
+.selectBackground label:hover{
+	font-size:24px;
+	color:#0F0;
+	-webkit-transition-property: color, font-size;
+	-moz-transition-property: color, font-size;
+	-o-transition-property: color, font-size;
+	transition-property: color, font-size;
+	
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;	
+}
+	
+/*this part is same as link part and it is apply on buttons to change their color and size in one second.*/
+button {
+	border-radius:8px;
+	-webkit-transition-property: color, font-size;
+	-moz-transition-property: color, font-size;
+	-o-transition-property: color, font-size;
+	transition-property: color, font-size;
+	
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+	
+button:hover{
+	border-radius:8px;
+	font-size:17px;
+	color:#F0F;
+	background-color:#9CF;
+	-webkit-transition-property: color, font-size;
+	-moz-transition-property: color, font-size;
+	-o-transition-property: color, font-size;
+	transition-property: color, font-size;
+	
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+	
+/* this part belongs to icons inside tab buttons and size of its buttons in div with id:communication*/	
+#ui-id-1, #ui-id-2, #ui-id-3{
+	padding:2px 29px;
+	height:25px;
+	width:28px;
+}
+/*this part is belongs to menu in home tab*/
+#ui-id-4, #ui-id-5{
+	padding:2px;
+	height:20px;
+	width:125px;
+	text-align:center;
+}
+
+/*this is for font color of selected tab inside home tab*/
+.ui-tabs .ui-tabs-nav .ui-state-active .ui-tabs-anchor{
+	color:#F50858;
+}
+/*this is for border of selected tab*/
+.ui-tabs .ui-tabs-nav .ui-state-active{
+	border:1px solid #F50858;
+}
+/*this is for background color of tabs when user hover the mouse on them*/
+.ui-tabs .ui-tabs-nav .ui-state-hover{
+	background:#D3E9F8;
+}
+
+#search{
+	margin-bottom:2px;
+}
+
+
+/*this part is belongs to search new contact in secong tab of communicatiopn part*/
+#newContact{
+	padding:10px;
+	height:300px;
+	overflow:auto;
+}

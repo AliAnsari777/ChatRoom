@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Login Page</title>
+<link href="../CSS/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1>Login</h1>
+    
+    <div style="margin-right:40%">
+    
+		<form action="../PHP/userLogin.php" method="post"> <!--This form is connected whit Login.php-->   
+            <p>
+            <label>User Name: </label> &nbsp;
+            <input type="text" id="userName" name="userName" size="30" autofocus />
+            </p>
+            
+            <p>
+            <label>Password: </label> &nbsp;
+            <input type="password" id="password" name="password" size="30"/>
+            </p>
+         
+    	    <button id="logIn" type="submit"> Login </button>	  
+    	</form>      
+    </div>
+    <div style="margin-top:1%">
+    	<a style="margin-left:48%" href="../index.html">Sing Up</a>
+    </div>
+    <div class="selectBackground" style="margin-top:27%" >
+        Backgrond Picture: &nbsp;
+        <input type="radio" name="selectPic" id="one">
+        <label for="one">1</label>
+        <input type="radio" name="selectPic" id="two">
+        <label for="two">2</label>
+        <input type="radio" name="selectPic" id="three">
+        <label for="three">3</label>
+        <input type="radio" name="selectPic" id="four">
+        <label for="four">4</label>
+    </div>
+    
+<script src="../JQury/jquery-1.11.1.js"></script>
+<script src="../JQury/loginValidation.js"></script>
+</body>
+</html>
+			

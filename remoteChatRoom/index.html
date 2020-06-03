@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign Up</title>
+<link href="CSS/style.css" rel="stylesheet" type="text/css">
+<link href="jquery-ui/jquery-ui.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<h1>Sign Up Now</h1>
+    <div style="position:relative; padding-bottom:1%">
+        <div id="page1">
+            <form action="PHP/regUser.php" method="post" enctype="multipart/form-data"> <!--this form is connected with regUser.php-->  
+                <p>
+                <label>Name: </label> &nbsp;&nbsp;*
+                <input type="text" id="name" name="name" size="30" placeholder="This filed is required" autofocus required />
+                </p>
+    
+                <p>    
+                <label>Last Name: </label> &nbsp;*
+                <input type="text" id="lastName" name="lastName" size="30" placeholder="This filed is required" required />  
+                </p>
+                
+                <p>
+                <label>User Name: </label> &nbsp;*
+                <input type="text" id="userName" name="userName" size="30" placeholder="This filed is required" required />
+                </p>
+                
+                <p>
+                <label>Password: </label> &nbsp;*
+                <input type="password" id="password" name="password" size="30" placeholder="This filed is required" required />
+                </p>
+                
+                <p>
+                <label>Confirm Password:</label> &nbsp;*
+                <input type="password" id="confPassword" name="confPassword" size="30" placeholder="This filed is required" required/>
+                </p>
+                <button  id="next2" name="next2" type="button">Next</button>
+         </div>
+                
+         <div id="page2">
+                <p>
+                <label>Phone Number:</label>&nbsp;
+                <input type="tel" id="phoneNumber" name="phoneNumber" size="30"/>
+                </p>
+                
+                <p>
+                <label>Email:</label> &nbsp;*
+                <input type="email" id="email" name="email" size="30" placeholder="This filed is required" required />
+                </p>
+                            
+                <p>
+                <label>Country/Region:</label> &nbsp;
+                <input type="text" id="country" name="country" size="30" />
+                </p>
+                            
+                <p>
+                <label>State/Province:</label> &nbsp;
+                <input type="text" id="province" name="province" size="30" />
+                </p>
+                        
+                <p>
+                <label>City:</label> &nbsp;
+                <input type="text" id="city" name="city" size="30" />
+                </p>
+                
+                <button  id="Previous1" type="button"> Previous</button>
+                <button  id="next3" type="button"> Next</button>
+           </div>
+           <div id="page3">     
+                <p>
+                <label>Date of Birth:</label> &nbsp;
+                <input type="date" id="dateOfBirth" name="dateOfBirth" size="50" style="width:232px"/>
+                </p>
+                
+                <p>
+                <label>Gender:</label> &nbsp;*
+                <select id="gender" name="gender" style="width:238px">
+                	<option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                </p>
+    
+                <p>
+                <label>Photo:</label> &nbsp; &nbsp;
+                <input type="file" id="photo" name="photo" accept="image/*"/>
+                </p>
+                
+                <p>
+                <label>Emotion:</label> &nbsp;
+                <textarea id="emotion" name="emotion" rows="3" cols="31"></textarea>
+                </p>
+                <button  id="Previous2" type="button"> Previous</button>
+                <button  id="signUp" type="submit"> Sign Up </button>
+                
+            </form>
+        </div>
+	</div>
+    
+    <!--Link to login page for those who have account-->
+    <div>
+    <a href="HTML/Login.html" style="margin-left:44%">Already have an account</a>
+    </div>
+    
+    <!--Options for selecting background image-->
+    <div class="selectBackground" >
+        	Backgrond Picture: &nbsp;
+            <input type="radio" name="selectPic" id="one" checked>
+            <label for="one">1</label>
+            <input type="radio" name="selectPic" id="two">
+            <label for="two">2</label>
+            <input type="radio" name="selectPic" id="three">
+            <label for="three">3</label>
+   	        <input type="radio" name="selectPic" id="four">
+          	<label for="four">4</label>
+    </div>
+    
+<script src="JQury/jquery-1.11.1.js"></script>
+<script src="JQury/signupValidation.js"></script>
+<script src="jquery-ui/jquery-ui.min.js"></script>
+
+</body>
+</html>
