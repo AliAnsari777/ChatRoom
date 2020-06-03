@@ -1,0 +1,5 @@
+This is my final project for the bachelor's degree. It was my first experience creating a whole project all by myself. 
+I designed, developed, and debugged the whole project by myself, and because I didn’t have that much experience I didn’t use any special
+framework or specific design pattern. This project is made by PHP, JQuery, HTML 5, CSS 3, and MySQL.
+This project has lots of shortage but for the first time it was a good experience and I learned lots of things from it.
+I should also mention that I received the best mark from my project.
